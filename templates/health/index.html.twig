@@ -6,8 +6,9 @@
 
     <section id="health">
         <div class="row max-height d-flex align-items-center justify-content-center">
+
             <div class="col-4">
-                <div class="card shadow shadow-lg" style="width: 25rem">
+                <div class="card shadow shadow-lg content">
                     <div class="card-header bg-info text-center text-uppercase">
                         HEALTH
                     </div>
@@ -23,13 +24,11 @@
             </div>
 
             <div class="col-4">
-                <div class="card shadow shadow-lg" style="width: 25rem">
+                <div class="card shadow shadow-lg content">
                     <div class="card-header bg-info text-center text-uppercase">
                        React component
                     </div>
                     <div class="card-body">
-                        <p>React component</p>
-
                         {{ react_component('HealthReact', {'props': { "name": "super cool react props"} }) }}
 
                         {# {{ react_component('HealthReact', {'props': { "name": "super cool react props"} , 'rendering': 'client_side' } ) }} #}
@@ -37,7 +36,6 @@
                     </div>
                 </div>
             </div>
-
 
         </div>
     </section>
