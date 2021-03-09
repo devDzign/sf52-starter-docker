@@ -4,13 +4,13 @@
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@symfony/stimulus-bridge": "^2.0.0",
     "@symfony/webpack-encore": "^1.0.0",
+    "autoprefixer": "^10.2.5",
     "axios": "^0.21.0",
-    "bootstrap": "^4.6.0",
     "core-js": "^3.0.0",
     "file-loader": "6.0.0",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "node-sass": "4.14.1",
-    "popper.js": "^1.16.1",
+    "postcss-loader": "^5.1.0",
     "prop-types": "^15.7.2",
     "regenerator-runtime": "^0.13.2",
     "sass": "^1.32.8",
@@ -29,9 +29,10 @@
     "srr-build": "encore production --config webpack.config.serverside.js --progress",
     "build-all": "encore production --progress && encore production --config webpack.config.serverside.js --progress",
     "watch-all": "encore dev --watch && encore dev --config webpack.config.serverside.js --watch"
-
   },
   "dependencies": {
+    "@popperjs/core": "^2.9.1",
+    "bootstrap": "^5.0.0-beta2",
     "chart.js": "^2.9.4",
     "event-source-polyfill": "^1.0.21",
     "glyphicons": "^0.2.0",
